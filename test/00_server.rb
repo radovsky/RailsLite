@@ -11,7 +11,7 @@ trap('INT') { server.shutdown }
 
 class MyController < ControllerBase
   def go
-    render_content("hello world!", "See more at www.radovsky.com" "text/html")
+    render_content("hello world!", "See more at radovsky.com" "text/html")
     render :show
     session["count"] ||= 0
     session["count"] += 1
